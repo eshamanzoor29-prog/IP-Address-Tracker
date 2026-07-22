@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IP Address Tracker</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+</head>
+
+
+<body>
+
+
+    <main class="container">
+
+
+        <!-- Header Section -->
+
+        <section class="hero">
+
+            <h1>
+                IP Address Tracker
+            </h1>
+
+
+            <div class="search-box">
+
+                <input 
+                type="text" 
+                placeholder="Search for any IP address or domain"
+                id="search-input">
+
+
+                <button id="search-btn">
+
+                    <img src="images/icon-arrow.svg">
+
+                </button>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Information Card -->
+
+
+        <section class="info-card">
+
+
+            <div class="box">
+
+                <p>IP ADDRESS</p>
+
+                <h2 id="ip">
+                    192.212.174.101
+                </h2>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <p>LOCATION</p>
+
+                <h2 id="location">
+                    Brooklyn, NY 10001
+                </h2>
+
+            </div>
+
+
+
+
+            <div class="box">
+
+                <p>TIMEZONE</p>
+
+                <h2 id="timezone">
+                    UTC -05:00
+                </h2>
+
+            </div>
+
+
+
+            <div class="box">
+
+                <p>ISP</p>
+
+                <h2 id="isp">
+                    SpaceX Starlink
+                </h2>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Map -->
+
+        <div id="map">
+
+        </div>
+
+
+
+    </main>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
